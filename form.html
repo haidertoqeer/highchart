@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Covim Dashboard">
+    <!-- Theme Coloring -->
+    <meta name="theme-color" content="#0e7d3f">
+    <!-- FavIcon -->
+    <!--    <link rel="icon" href="assets/image/favicon.png" type="image/x-icon">-->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="assets/owlCarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlCarousel/css/owl.theme.default.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <!-- Styling -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- -->
+    <!-- Color Theme -->
+<!--    <link rel="stylesheet" href="assets/css/blue-theme.css">-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <!-- -->
+    <title>Covim | Dashboard </title>
+  </head>
+  <body data-theme="blue">
+   <div class="main-wrapper" id="main-wrapper">
+    <aside>
+        <div class="text-center w-100">
+            <a href="#"><img src="assets/images/icons/icon.png" class="img-fluid aside-logo" alt=""></a>
+        </div>
+        <div class="menu-ul">
+            <ul>
+                <a href="index.html"><li><i class="fas fa-grip-vertical"></i></li></a>
+                <a href="datatable.html"><li><i class="fab fa-gitter"></i></li></a>
+                <a href="form.html" class="active"><li><i class="fab fa-connectdevelop"></i></li></a>
+                <a href=""><li><i class="fab fa-delicious"></i></li></a>
+                <a href=""><li><i class="fas fa-fan"></i></li></a>
+            </ul>
+        </div>
+    </aside>
+    <content>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Image and text -->
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light cst-navbar">
+                      <a class="navbar-brand" href="#">
+<!--                        <img src="assets/images/home.svg" width="30" height="30" class="d-inline-block align-top" alt="">-->
+<!--                     <i class="fas fa-bars" onclick="togglesidebar()"></i>-->
+                     <i class="fas fa-sliders-h" onclick="togglesidebar()"></i>
+                      </a>
+                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                          </li>
+<!--
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                          </li>
+-->
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 <i class="fas fa-user-circle fa-lg"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mb-3" style="height: calc(100vh - 100px); overflow: auto;">
+         <div class="row">
+             <div class="col-lg-6">
+                 <ul class="list-unstyled">
+                  <li class="media">
+                    <img src="assets/images/64x64.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">List-based media object</h5>
+                     <small>
+                          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                     </small>
+                    </div>
+                  </li>
+                  <li class="media my-4">
+                    <img src="assets/images/64x64.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">List-based media object</h5>
+                      <small>
+                          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                     </small>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <img src="assets/images/64x64.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">List-based media object</h5>
+                      <small>
+                          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                     </small>
+                    </div>
+                  </li>
+                </ul>
+             </div>
+             <div class="col-lg-6">
+                 <div class="box-cst">
+                     <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">@example.com</span>
+                          </div>
+                        </div>
+
+                        <label for="basic-url">Your vanity URL</label>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                          </div>
+                          <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">$</span>
+                          </div>
+                          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                          <div class="input-group-append">
+                            <span class="input-group-text">.00</span>
+                          </div>
+                        </div>
+
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">With textarea</span>
+                          </div>
+                          <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                 </div>
+             </div>
+             <div class="col-lg-12">
+                 <div class="box-cst">
+                     <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputEmail4">Email</label>
+                              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">Password</label>
+                              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                          </div>
+                          <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputCity">City</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="inputState">State</label>
+                              <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                              <label for="inputZip">Zip</label>
+                              <input type="text" class="form-control" id="inputZip">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                              <label class="form-check-label" for="gridCheck">
+                                Check me out
+                              </label>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-theme">Sign in</button>
+                        </form>
+                 </div>
+             </div>
+             <div class="col-lg-6">
+                 <div class="box-cst">
+                    <div class="progress mt-2">
+                     <div class="progress-bar bg-theme" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                    </div>
+                     <div class="progress mt-2">
+                     <div class="progress-bar bg-theme" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
+                    </div>
+                     <div class="progress mt-2">
+                     <div class="progress-bar bg-theme" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                    </div>
+                     <div class="progress mt-2">
+                     <div class="progress-bar bg-theme" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                    <div class="alert bg-theme mt-2" role="alert">
+                    A simple primary alert—check it out!
+                    </div>
+                    <div class="alert alert-theme mt-3" role="alert">
+                      A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    </div>
+                    <div class="alert alert-theme mt-3" role="alert">
+                      <h4 class="alert-heading">Well done!</h4>
+                      <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                      <hr>
+                      <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                    </div>
+                 </div>
+             </div>
+             <div class="col-lg-6">
+                 <div class="box-cst">
+                    <div class="card mt-2 card-theme">
+                        <div class="card-header"> Featured </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-theme">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card text-center card-theme mt-3">
+                      <div class="card-header">
+                        Featured
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-theme">Go somewhere</a>
+                      </div>
+                      <div class="card-footer text-muted">
+                        2 days ago
+                      </div>
+                    </div>
+                 </div>
+             </div>
+         </div>
+           
+        </div>
+    </content>
+   </div>
+    <div class="fixed-color" id="fixed-color">
+        <span class="icon" onclick="colorsidebar()"> <i class="fas fa-cog fa-spin"></i></span>
+        <div class="flex-row row">
+           
+            <span onclick="bluetheme()" class="blue-color active"></span>
+            <span onclick="orangetheme()" class="orange-color"></span>
+            <span onclick="greentheme()" class="green-color"></span>
+            <span onclick="yellowtheme()" class="yellow-color"></span>
+            <span onclick="graytheme()" class="gray-color"></span>
+            <span onclick="pinktheme()" class="pink-color"></span>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/bootstrap/popper.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/owlCarousel/js/owl.carousel.min.js"></script>
+    <script src="assets/js/custom_charts.js"></script>
+    <!-- Custom JavaScript -->
+     <script>
+      
+         // Toggle Class for Asidebar
+         function togglesidebar(){
+             var element = document.getElementById("main-wrapper");
+             element.classList.toggle("full-width-screen");
+         }
+      
+    // check screen width 
+         
+      jQuery(document).ready(function($) {
+  var alterClass = function() {
+    var ww = document.body.clientWidth;
+    if (ww < 768) {
+      $('.main-wrapper').addClass('full-width-screen');
+    } else if (ww >= 768) {
+      $('main-wrapper').removeClass('full-width-screen');
+    };
+  };
+  $(window).resize(function(){
+    alterClass();
+  });
+  //Fire it when the page first loads:
+  alterClass();
+});
+
+         // onclick function
+         function colorsidebar()
+{
+    var element = document.getElementById("fixed-color");
+    element.classList.toggle("active");
+}
+        
+         //
+         $('.flex-row span').on('click', function () {
+$('.flex-row span').removeClass('active');// here remove class selected from all showfood
+    $(this).addClass('active');// here apply selected class on clickable showfood
+//    $('.targetFood').hide();
+//    $('#food' + $(this).data('target')).show(function() {
+//        $('#food' + $(this).data('target')).toggle("slide");
+//    });
+});
+        
+    
+ function bluetheme() {
+  document.getElementsByTagName("body")[0].setAttribute("data-theme", "blue"); 
+}
+function greentheme() {
+  document.getElementsByTagName("body")[0].setAttribute("data-theme", "green"); 
+}
+         function pinktheme() {
+  document.getElementsByTagName("body")[0].setAttribute("data-theme", "pink"); 
+}
+                  function orangetheme() {
+  document.getElementsByTagName("body")[0].setAttribute("data-theme", "orange"); 
+}
+                  function yellowtheme() {
+  document.getElementsByTagName("body")[0].setAttribute("data-theme", "yellow"); 
+}
+                  function graytheme() {
+  document.getElementsByTagName("body")[0].setAttribute("data-theme", "gray"); 
+}
+      </script>
+  </body>
+</html>

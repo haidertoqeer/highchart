@@ -1,0 +1,44 @@
+[
+ {
+   "FIELD1": "1-Feb-21",
+   "Sinopharm": 50,
+   "Moderna": 40,
+   "Astrazeneca": 80
+ },
+ {
+   "FIELD1": "2-Feb-21",
+   "Sinopharm": 200,
+   "Moderna": 250,
+   "Astrazeneca": 59
+ },
+ {
+   "FIELD1": "3-Feb-21",
+   "Sinopharm": 300,
+   "Moderna": 380,
+   "Astrazeneca": 78
+ },
+ {
+   "FIELD1": "4-Feb-21",
+   "Sinopharm": 500,
+   "Moderna": 400,
+   "Astrazeneca": 70
+ },
+ {
+   "FIELD1": "5-Feb-21",
+   "Sinopharm": 100,
+   "Moderna": 239,
+   "Astrazeneca": 69
+ },
+ {
+   "FIELD1": "6-Feb-21",
+   "Sinopharm": 23,
+   "Moderna": 52,
+   "Astrazeneca": 68
+ },
+ {
+   "FIELD1": "7-Feb-21",
+   "Sinopharm": 68,
+   "Moderna": 64,
+   "Astrazeneca": 67
+ }
+]

@@ -1,0 +1,59 @@
+// Aside Styling
+
+.main-wrapper{
+    display: flex;
+}
+
+
+    aside{
+    width: 50px;
+    background: #fff;
+    height: 100vh;
+    border-right: 1px solid #efefef;
+    transition: all 0.2s;
+    
+    .aside-logo{
+        width: 40px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-top: 10px;
+        li{
+            text-align: center;
+            color: var(--textColor) ;
+            padding: 20px 0;
+            transition: all 0.3s;
+        }
+        a{
+            &:hover{
+                li{
+                     color: var(--themeColor) ;
+                }
+            }
+            &.active{
+                 li{
+                     color: var(--themeColor) ;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+content{
+    width: calc(100vw - 50px);
+    
+}
+.full-width-screen{
+    aside{
+        width: 0;
+        overflow: hidden;
+    }
+    content{
+        width: 100vw;
+    }
+}
+

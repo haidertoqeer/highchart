@@ -1,0 +1,14 @@
+// Responsive 
+
+@media (max-width: 976px) { 
+    .col{
+       width: 50% !important;
+        flex-basis: auto;
+    }
+}
+@media (max-width: 576px) { 
+    .col{
+       width: 100% !important;
+        flex-basis: auto;
+    }
+}

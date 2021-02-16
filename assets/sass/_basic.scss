@@ -1,0 +1,88 @@
+// Basic Color and FontFamilies
+
+//
+//$bg-light : #f5f7fb;
+//$basic : #5b9cb5;
+//$light-gray: #71756d;
+////$green : #86b55b;
+//
+//body[color = 'light']{
+//    background: $bg-light;
+//    $basic : red !important;
+//    color: $basic !Important;
+//}
+
+
+//body {
+//    --themeColor: #5b9cb5;
+//    --bgColor: #f5f7fb;
+//    --textColor: #71756d;
+//}
+//body .myElement {
+//    background-color: var(--primaryColor);
+//}
+body{
+    transition: all 0.4s;
+}
+body.blue, body[data-theme="blue"] {
+    --themeColor: #5b9cb5;
+    --bgColor: #f5f7fb;
+    --textColor: #71756d;
+    background: var(--bgColor);
+
+}
+body.green, body[data-theme="green"] {
+    --themeColor: #86b55b;
+    --bgColor: #f0f3f0;
+    --textColor: #71756d;
+      background: var(--bgColor);
+}
+body.pink, body[data-theme="pink"] {
+    --themeColor: #b55baa;
+    --bgColor: #f9eff9;
+    --textColor: #71756d;
+    background: var(--bgColor);
+}
+body.gray, body[data-theme="gray"] {
+    --themeColor: #585851;
+    --bgColor: #e4e4e4;
+    --textColor: #71756d;
+     background: var(--bgColor);
+}
+body.yellow, body[data-theme="yellow"] {
+    --themeColor: #c3b93d;
+    --bgColor: #fbfaf1;
+    --textColor: #71756d;
+     background: var(--bgColor);
+}
+body.orange, body[data-theme="orange"] {
+    --themeColor: #b5995b;
+    --bgColor: #f7f4f1;
+    --textColor: #71756d;
+    background: var(--bgColor);
+}
+a{
+    transition: all 0.2s;
+}
+
+.bg-theme{
+     background: var(--bgColor) !important;
+     color: var(--themeColor);
+}
+ .alert-theme{
+    background: var(--bgColor) !important;
+     color: var(--themeColor);
+}
+.card-theme{
+    .card-header{
+         background: var(--bgColor) !important;
+     color: var(--themeColor);
+    }
+    .card-title{
+        color: var(--themeColor);
+    }
+    .card-footer{
+         background: var(--bgColor) !important;
+     color: var(--themeColor);
+    }
+}

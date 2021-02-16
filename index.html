@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Covim Dashboard">
+    <!-- Theme Coloring -->
+    <meta name="theme-color" content="#0e7d3f">
+    <!-- FavIcon -->
+    <!--    <link rel="icon" href="assets/image/favicon.png" type="image/x-icon">-->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="assets/owlCarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlCarousel/css/owl.theme.default.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <!-- Styling -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- -->
+    <!-- Color Theme -->
+<!--    <link rel="stylesheet" href="assets/css/blue-theme.css">-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <!-- -->
+    <title>Covim | Dashboard </title>
+  </head>
+  <body data-theme="blue">
+   <div class="main-wrapper" id="main-wrapper">
+    <aside>
+        <div class="text-center w-100">
+            <a href="#"><img src="assets/images/icons/icon.png" class="img-fluid aside-logo" alt=""></a>
+        </div>
+        <div class="menu-ul">
+            <ul>
+                <a href="index.html" class="active"><li><i class="fas fa-grip-vertical"></i></li></a>
+                <a href="datatable.html"><li><i class="fab fa-gitter"></i></li></a>
+                <a href="form.html"><li><i class="fab fa-connectdevelop"></i></li></a>
+                <a href=""><li><i class="fab fa-delicious"></i></li></a>
+                <a href=""><li><i class="fas fa-fan"></i></li></a>
+            </ul>
+        </div>
+    </aside>
+    <content>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Image and text -->
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light cst-navbar">
+                      <a class="navbar-brand" href="#">
+<!--                        <img src="assets/images/home.svg" width="30" height="30" class="d-inline-block align-top" alt="">-->
+<!--                     <i class="fas fa-bars" onclick="togglesidebar()"></i>-->
+                     <i class="fas fa-sliders-h" onclick="togglesidebar()"></i>
+                      </a>
+                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                          </li>
+<!--
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                          </li>
+-->
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 <i class="fas fa-user-circle fa-lg"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mb-3" style="height: calc(100vh - 100px); overflow: auto;">
+           <div class="row cst-col">
+               <div class="col">
+                   <div class="fig-box">
+                       <span class="title">Total Issued to Province</span>
+                       <span class="fig">1298</span>
+                       <span class="icon"><i class="fas fa-cubes"></i></span>
+                   </div>
+               </div>
+                <div class="col">
+                   <div class="fig-box">
+                       <span class="title">Current Stock in Provincial Stores</span>
+                       <span class="fig">506</span>
+                       <span class="icon"><i class="fas fa-layer-group"></i></span>
+                   </div>
+               </div>
+                <div class="col">
+                   <div class="fig-box">
+                       <span class="title">Current Stock in Districts Stores</span>
+                       <span class="fig">516</span>
+                       <span class="icon"><i class="fab fa-stack-overflow"></i></span>
+                   </div>
+               </div>
+                <div class="col">
+                   <div class="fig-box">
+                       <span class="title">Stock not received by Districts yet</span>
+                       <span class="fig">22</span>
+                       <span class="icon"><i class="fas fa-ambulance"></i></span>
+                   </div>
+               </div>
+                <div class="col">
+                   <div class="fig-box">
+                       <span class="title">Total Vaccine Issued to HF</span>
+                       <span class="fig">310</span>
+                       <span class="icon"><i class="fas fa-archway"></i></span>
+                   </div>
+               </div>
+           </div>
+           <div class="row cst-col">
+               <div class="col">
+                   <div class="fig-box">
+                       <span class="title">Total Vaccine Received by HF</span>
+                       <span class="fig">315</span>
+                       <span class="icon"><i class="fas fa-archive"></i></span>
+                   </div>
+               </div>
+                <div class="col">
+                   <div class="fig-box">
+                       <span class="title">Stock not received by HFs yet</span>
+                       <span class="fig">-5</span>
+                       <span class="icon"><i class="fab fa-bitbucket"></i></span>
+                   </div>
+               </div>
+                <div class="col">
+                   <div class="fig-box">
+                       <span class="title">Total Vaccine Used</span>
+                       <span class="fig">19</span>
+                        <span class="icon"><i class="fas fa-box"></i></span>
+                   </div>
+               </div>
+                <div class="col">
+                   <div class="fig-box">
+                       <span class="title">Total Vaccines Wastage</span>
+                       <span class="fig">012345</span>
+                       <span class="icon"><i class="fas fa-box-open"></i></span>
+                   </div>
+               </div>
+                 <div class="col">
+                   <div class="fig-box">
+                       <span class="title">Vaccines in Balance at HFs</span>
+                       <span class="fig">294</span>
+                       <span class="icon"><i class="fas fa-balance-scale"></i></span>
+                   </div>
+               </div>
+           </div>
+            <div class="row">
+                <div class="col-lg-6 mt-2">
+                    <div id="donut_chart" class="chart-box"></div>
+                </div>
+                 <div class="col-lg-6 mt-2">
+                    <div id="3ddonut_chart" class="chart-box"></div>
+                </div>
+                <div class="col-lg-6 mt-2">
+                    <div id="stock_status" class="chart-box"></div>
+                </div>
+<!--
+                <div class="col-lg-6 mt-2">
+                    <div id="provincewise_stock_status" class="chart-box"></div>
+                </div>
+-->
+                <div class="col-lg-6 mt-2">
+                    <div id="stock_balance" class="chart-box"></div>
+                </div>
+                <div class="col-lg-6 mt-2">
+                    <div id="stock_share" class="chart-box"></div>
+                </div>
+                 
+                <div class="col-lg-6 mt-2">
+                    <div id="persons_vaccinated" class="chart-box"></div>
+                </div>
+            </div>
+        </div>
+    </content>
+   </div>
+    <div class="fixed-color" id="fixed-color">
+        <span class="icon" onclick="colorsidebar()"> <i class="fas fa-cog fa-spin"></i></span>
+        <div class="flex-row row">
+           
+            <span onclick="bluetheme()" class="blue-color active"></span>
+            <span onclick="orangetheme()" class="orange-color"></span>
+            <span onclick="greentheme()" class="green-color"></span>
+            <span onclick="yellowtheme()" class="yellow-color"></span>
+            <span onclick="graytheme()" class="gray-color"></span>
+            <span onclick="pinktheme()" class="pink-color"></span>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/bootstrap/popper.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/owlCarousel/js/owl.carousel.min.js"></script>
+    <script src="assets/js/custom_charts.js"></script>
+    <!-- Custom JavaScript -->
+     <script>
+      
+         // Toggle Class for Asidebar
+         function togglesidebar(){
+             var element = document.getElementById("main-wrapper");
+             element.classList.toggle("full-width-screen");
+         }
+      
+    // check screen width 
+         
+      jQuery(document).ready(function($) {
+  var alterClass = function() {
+    var ww = document.body.clientWidth;
+    if (ww < 768) {
+      $('.main-wrapper').addClass('full-width-screen');
+    } else if (ww >= 768) {
+      $('main-wrapper').removeClass('full-width-screen');
+    };
+  };
+  $(window).resize(function(){
+    alterClass();
+  });
+  //Fire it when the page first loads:
+  alterClass();
+});
+
+         // onclick function
+         function colorsidebar()
+{
+    var element = document.getElementById("fixed-color");
+    element.classList.toggle("active");
+}
+        
+         //
+         $('.flex-row span').on('click', function () {
+$('.flex-row span').removeClass('active');// here remove class selected from all showfood
+    $(this).addClass('active');// here apply selected class on clickable showfood
+//    $('.targetFood').hide();
+//    $('#food' + $(this).data('target')).show(function() {
+//        $('#food' + $(this).data('target')).toggle("slide");
+//    });
+});
+        
+    
+ function bluetheme() {
+  document.getElementsByTagName("body")[0].setAttribute("data-theme", "blue"); 
+}
+function greentheme() {
+  document.getElementsByTagName("body")[0].setAttribute("data-theme", "green"); 
+}
+         function pinktheme() {
+  document.getElementsByTagName("body")[0].setAttribute("data-theme", "pink"); 
+}
+                  function orangetheme() {
+  document.getElementsByTagName("body")[0].setAttribute("data-theme", "orange"); 
+}
+                  function yellowtheme() {
+  document.getElementsByTagName("body")[0].setAttribute("data-theme", "yellow"); 
+}
+                  function graytheme() {
+  document.getElementsByTagName("body")[0].setAttribute("data-theme", "gray"); 
+}
+      </script>
+  </body>
+</html>
